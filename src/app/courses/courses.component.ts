@@ -41,7 +41,7 @@ export class CoursesComponent {
 
   //Sorterar kurser baserat på vald egenskap
   sortData(property: keyof Course): void {
-    this.courses = this.courses.sort((a, b) => {
+    this.searchedCourses = this.searchedCourses.sort((a, b) => {
       if (a[property] > b[property]) {
         return 1;
       } else if (a[property] < b[property]) {
