@@ -1,9 +1,12 @@
 .course-table-container {
-    margin: 20px;
+    
+    margin: 20px auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    background-color: #f9f9f9;
+    border: 1px solid #444;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    background-color: #333333;
+    color: #F8F8FF;
+    max-width: 800px;
 }
 
 .course-table {
@@ -15,14 +18,76 @@
 .course-table th, .course-table td {
     text-align: left;
     padding: 8px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #555; 
+    color: #F8F8FF;
+}
+
+.clickable {
+    cursor: pointer;
 }
 
 .course-table th {
-    background-color: #437744;
-    color: white;
+    background-color: #366bb4;
 }
 
 .course-table tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #393939;
+}
+
+.course-table tr:hover {
+    background-color: #505050;
+}
+
+.search {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #333333;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.search label {
+    margin-right: 10px;
+}
+
+.search input[type="text"] {
+    padding: 8px 10px;
+    margin-top: 5px;
+    border: 1px solid #444;
+    background-color: #2B2B2B;
+    color: #F8F8FF;
+    border-radius: 4px;
+    width: 60%;
+}
+
+.search input[type="text"]:focus {
+    border-color: #575757;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 550px) {
+    label,
+    th,
+    tr {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 500px) {
+    label,
+    th,
+    tr {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 440px) {
+    label,
+    th,
+    tr {
+        font-size: 0.7em;
+    }
 }

@@ -1,27 +1,15 @@
-# Mom4Angular
+# DT208G - Moment 3 - Angular II
 
+Alexander Hilding
+
+## Konstruktion
+Projektet initierades med Angular CLI. En komponent skapandes `CoursesComponent` som är ansvarig för att visa kursdata i tabellform.
+Ett interface `Course` skapades för att typsäkra data. En service `CoursesService` skapades för att hantera datahämtning från extern källa via Angulars `HttpClient`. Denna service använder Observables för att hantera asynkron datahämtning
+Metoder skrevs i klassen i `CoursesComponent` för att filtrera och sortera kurser.
+
+## Funktion
+Webbapplikationen syftar till att hantera och visa kursinformation för ett utbildningsprogram. Kursinformationen kan filtreras och sorteras.
+Applikationen är byggd med Angular och använder bland annat Angulars `HttpClient`-modul för att utföra HTTP GET-anrop till ett RESTful API.
+
+## Angular
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.4.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
