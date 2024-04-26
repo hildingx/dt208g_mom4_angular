@@ -4,8 +4,8 @@ Alexander Hilding
 
 ## Konstruktion
 Projektet initierades med Angular CLI. En komponent skapandes `CoursesComponent` som är ansvarig för att visa kursdata i tabellform.
-Ett interface `Course` skapades för att typsäkra data. En service `CoursesService` skapades för att hantera datahämtning från extern källa via Angulars `HttpClient`. Denna service använder Observables för att hantera asynkron datahämtning
-Metoder skrevs i klassen i `CoursesComponent` för att filtrera och sortera kurser.
+Ett interface `Course` skapades för att typsäkra data. En service `CoursesService` skapades för att hantera datahämtning från extern källa via Angulars `HttpClient`. Denna service använder Observables för att hantera asynkron datahämtning.
+Metoder skrevs i klassen i `CoursesComponent` för att ladda kurser från service vid initiering samt filtrera och sortera kurser.
 
 ## Funktion
 Webbapplikationen syftar till att hantera och visa kursinformation för ett utbildningsprogram. Kursinformationen kan filtreras och sorteras.
